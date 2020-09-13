@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+params = YAML.load_file(Dir.pwd + "/db/seeds.yml")
+
+data = params['projects']
+data.each do |arr|
+
+  project = Project.create(title: arr['title'])
+  arr['todos'].each do |task|
+    binding.pry
+    task = Task.new(task)
+    task.project = project
+    task.save
+  end
+end
