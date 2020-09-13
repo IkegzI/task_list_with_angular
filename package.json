@@ -1,9 +1,6 @@
 {
   "name": "task_list_with_angular",
   "private": true,
-  "scripts": {
-    "build": "babel src -d lib"
-  },
   "engines": {
     "yarn": ">= 1.0.0"
   },
