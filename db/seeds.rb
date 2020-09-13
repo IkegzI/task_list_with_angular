@@ -12,7 +12,6 @@ data.each do |arr|
 
   project = Project.create(title: arr['title'])
   arr['todos'].each do |task|
-    binding.pry
     task = Task.new(task)
     task.project = project
     task.save
