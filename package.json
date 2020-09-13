@@ -2,7 +2,8 @@
   "name": "task_list_with_angular",
   "private": true,
   "engines": {
-    "yarn": ">= 1.0.0"
+    "node": ">=6.0.0",
+    "yarn": ">=0.25.2"
   },
   "scripts": {
     "start": "expo start",
@@ -10,9 +11,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject"
-  },"devDependencies": {
-  "babel-preset-expo": "^7.0.0"
-},
+  },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
@@ -21,6 +20,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "babel-preset-expo": "^7.0.0",
     "webpack-dev-server": "^3.11.0"
   }
 }
