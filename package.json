@@ -2,7 +2,6 @@
   "name": "task_list_with_angular",
   "private": true,
   "engines": {
-    "node": ">=6.0.0",
     "yarn": ">=0.25.2"
   },
   "scripts": {
