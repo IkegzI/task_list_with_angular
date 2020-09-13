@@ -4,11 +4,19 @@
   "engines": {
     "yarn": ">= 1.0.0"
   },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
+  },"devDependencies": {
+  "babel-preset-expo": "^7.0.0"
+},
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
-    "webpack": "^4.0.0",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
