@@ -5,6 +5,9 @@
     "node": ">=6.0.0",
     "yarn": ">=0.25.2"
   },
+  "scripts": {
+    "build": "webpack --mode production --config ./webpack.prod.config.js"
+  },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
