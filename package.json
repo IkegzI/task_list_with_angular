@@ -1,8 +1,12 @@
 {
   "name": "task_list_with_angular",
   "private": true,
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "jest"
+  },
   "engines": {
-    "yarn": ">= 1.22.3"
+    "yarn": ">= 1.0.0"
   },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
