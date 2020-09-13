@@ -3,7 +3,8 @@
   "private": true,
   "engines": {
     "node": ">=6.0.0",
-    "yarn": ">=0.25.2"
+    "yarn": ">=0.25.2",
+    "babel": ">=0.0.1"
   },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
