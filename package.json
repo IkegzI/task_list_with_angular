@@ -10,7 +10,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "postinstall": "NODE_ENV=production webpack -p"
   },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
@@ -20,7 +21,6 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "webpack-dev-server": "^3.11.0",
-    "webpack": ">=0.25.2"
+    "webpack-dev-server": "^3.11.0"
   }
 }
