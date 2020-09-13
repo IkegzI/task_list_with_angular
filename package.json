@@ -2,14 +2,8 @@
   "name": "task_list_with_angular",
   "private": true,
   "engines": {
+    "node": ">=6.0.0",
     "yarn": ">=0.25.2"
-  },
-  "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
   },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
