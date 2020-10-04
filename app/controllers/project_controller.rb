@@ -18,8 +18,8 @@ class ProjectController < ApplicationController
       arr << hash
     end
       respond_to do |format|
-        format.js { render json: arr.to_json }
-        format.html {render html: '111' }
+        format.json { render json: arr.to_json, status: 200 }
+        format.html {render html: arr.to_json, status: 200  }
       end
   end
 

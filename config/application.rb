@@ -15,13 +15,13 @@ module TaskListWithAngular
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
-    config.middleware.insert_before 0, Rack::Cors do
+
+    config.middleware.use Rack::Cors do
       allow do
-        origins 'http://localhost:3000'
-        resource '*', :headers => :any, :methods => [:get, :post, :options]
+        origins '*'
+        resource '*', :headers => :any, :methods => [:get, :post, :delete, :put, :options]
       end
     end
-    #
   end
 end
 
