@@ -1,4 +1,5 @@
 class ProjectController < ApplicationController
+
   def index
     projects = Project.all
     arr = []
@@ -16,8 +17,10 @@ class ProjectController < ApplicationController
       end
       arr << hash
     end
-    render json: arr.to_json, status: :ok
-
+      respond_to do |format|
+        format.js { render json: arr.to_json }
+        format.html {render html: '111' }
+      end
   end
 
   def update

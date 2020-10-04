@@ -23,7 +23,7 @@ class AddLineTest < ActionDispatch::IntegrationTest
     #   assert true
     post '/todos',
            params: {task: {text: '1211231', isCompleted: false}}
-
+    assert_select "p", "Title:\n  can create"
   end
 
 end
